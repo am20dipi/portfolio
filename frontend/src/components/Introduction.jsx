@@ -1,4 +1,5 @@
 import React from 'react'
+import cat from '../images/IMG_9796-1.jpg'
 
 function Introduction(){
     return (
@@ -10,16 +11,20 @@ function Introduction(){
                     <div className="i-title">
                         <div className="i-title-wrapper">
                             <div className="i-title-item">Web Developer</div>
-                            <div className="i-title-item">Writer</div>
+                            <div className="i-title-item">Technical Writer</div>
+                            <div className="i-title-item">Freelancer</div>
                         </div>
                     </div>
+                    <br/>
                     <div className="i-description">
                         Frontend Focused Software Engineer with Fullstack Experience
                     </div>
                 </div>
             </div>
             <div className="i-right">
-                <img className="i-img" src="" alt="" />
+                <div className="i-bg">
+                   {/*  <img className="i-img" src={cat} alt="" /> */}
+                </div>
                 
             </div>
         </div>
