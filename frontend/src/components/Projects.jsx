@@ -30,19 +30,24 @@ const projects = [
 function Projects() {
     return (
         <div className="p">
-            <div className="p-wrapper">
-                <h1 className="p-title">recent work</h1>
-                <div className="p-list">
-                    {projects.map((project, index) => {
-                        return (
-                            <div className="project" key={index}>
-                                <h4>{project.name}</h4>
-                                <p>{project.description}</p>
+            <h4>Frontend Focused Software Engineer with Fullstack Experience</h4>
+            <br/>
+            <div className="card-columns">
+                {projects.map((project, index) => {
+                    return (
+                    <div className="card" id="project" key={index} onClick={() => window.open(project.github)}>
+                        <img className="card-img-top" src={project.image} alt={project.name}/>
+                        <div className="card-body">
+                            <h5 className="card-title">{project.name}</h5>
+                            <p className="card-text text-muted">{project.description}</p>
+                        </div>
+                        <div className="card-footer">
                                 <a href={project.github} target="_blank" rel="noopener noreferrer" className="card-link" ><i className="fa fa-github"></i></a>
-                            </div>
-                        )
-                    })}
-                </div>
+                        </div>
+                    </div>
+                    )
+                })}
+                
             </div>
         </div>
     )

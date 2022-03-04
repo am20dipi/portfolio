@@ -17,7 +17,7 @@ function Introduction(){
                     </div>
                     <br/>
                     <div className="i-description">
-                        Frontend Focused Software Engineer with Fullstack Experience
+                        
                     </div>
                 </div>
             </div>
