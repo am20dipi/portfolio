@@ -1,7 +1,44 @@
+import { useRef } from 'react'
+import emailjs from '@emailjs/browser'
+
+import { toast } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
+
+toast.configure()
+
+const SERVICE_ID = "service_ed8neos"
+const TEMPLATE_ID = 'template_5uffohf'
+const USER_ID = "yX0TIcG5EBQ687WpH"
 
 
 
 function Contact(){
+
+    const form = useRef()
+
+    const handleSubmit = (e) => {
+        e.preventDefault()
+
+        emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, USER_ID)
+            .then((result) => {
+                console.log(result.text)
+                
+            })
+            .catch((error) => {
+                console.log(error)
+            })
+            successNotify()    
+            e.target.reset()
+            
+        }
+
+   
+
+    const successNotify = () => {
+        toast.success('Message sent!', { position: toast.POSITION.TOP_RIGHT})
+        
+    }
+
     return (
         <div className="c">
             <div className="c-bg">
@@ -30,10 +67,10 @@ function Contact(){
                         <p className="c-description">
                             <b>Questions?</b> Get in touch. 
                         </p>
-                        <form className="contact-form">
-                            <input type="text" placeholder="name" name="name" />
-                            <input type="email" placeholder="email" name="email"/>
-                            <textarea rows="5" placeholder="type your message here" name="message"></textarea>
+                        <form ref={form} onSubmit={handleSubmit} className="contact-form">
+                            <input type="text" placeholder="name" name="name" required />
+                            <input type="email" placeholder="email" name="email" required/>
+                            <textarea rows="5" placeholder="type your message here" name="message"required />
                             <button className="submit">submit</button>
                         </form>
                     </div>
