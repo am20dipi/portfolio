@@ -59,7 +59,6 @@ function Contact(){
                             {/* github */}
                             <div className="c-info-item">
                                 <a href="https://github.com/am20dipi" target="_blank" className="c-icon" rel="noopener noreferrer"><i className="fa fa-github"></i></a>
-                                {/* /am20dipi */}
                             </div>
                         </div>
                     </div>
