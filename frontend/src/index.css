@@ -101,11 +101,15 @@ code {
   justify-content: center;
   position: relative;
   height: 100%;
-  background-color: rgb(209, 229, 230);
+  background-color: rgb(255, 255, 255);
 }
 
 .a-right{
   flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
 
 .a-card{
@@ -127,4 +131,71 @@ code {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+
+/* contact */
+
+.c{
+  height: 100vh;
+  position: relative;
+}
+
+.c-bg{
+  width: 20px;
+  height: 100%;
+  background-color: rgb(225, 238, 196);
+  position: absolute;
+}
+
+.c-wrapper{
+  padding: 50px;
+  display: flex;
+}
+
+.c-left{
+  flex: 1;
+}
+
+.c-right{
+  flex: 1;
+}
+
+.c-title {
+  font-size: 60px;
+  width: 100%;
+}
+
+.c-info {
+  
+}
+
+
+.c-info-item{
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  background-color: #fff;
+  text-align: center;
+  transition: 0.6s;
+  box-shadow: 0 0px 12px 3px  rgb(155, 177, 113);
+  margin: 15px;
+}
+
+.c-icon{
+  width: 30px;
+  height: 30px;
+
+}
+
+.c-description{
+  font-weight: 200;
+}
+
+.fa{
+  font-size: 19px;
+  line-height: 30px;
+  transition: 0.6s;
+  color: #000;
 }
