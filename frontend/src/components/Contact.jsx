@@ -50,7 +50,7 @@ function Contact(){
                                 <a href="https://www.linkedin.com/in/adriana-dipietro/" className="c-icon" target="_blank" rel="noopener noreferrer"><i className="fa fa-linkedin"></i></a>
                             </div>
                             <div className="c-info-item">
-                                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=adrianadipietro4@gmail.com&su=Hi+Adriana" className="c-icon" target="_blank" rel="noopener noreferrer"><i className="fa fa-google"></i></a>
+                                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=adrianadipietro4@gmail.com&su=Hi+Adriana" className="c-icon" target="_blank" rel="noopener noreferrer"><i class="fa-regular fa-envelope"></i></a>
                             </div>
                             <div className="c-info-item">
                                 <a href="https://github.com/am20dipi" target="_blank" className="c-icon" rel="noopener noreferrer"><i className="fa fa-github"></i></a>
@@ -59,7 +59,7 @@ function Contact(){
                     </div>
                     <div className="c-right">
                         <p className="c-description">
-                            <b>Questions?</b> Get in touch. 
+                            <b>Questions?</b> <span style={{fontWeight: '600'}}>Get in touch.</span> 
                         </p>
                         <form ref={form} onSubmit={handleSubmit} className="contact-form">
                             <input type="text" placeholder="name" name="name" required />

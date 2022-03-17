@@ -1,9 +1,11 @@
-
+import congruent from '../images/congruent.png'
+import silvermark from '../images/silvermark.png'
+import adrui from '../images/adr-ui.png'
 
 const projects = [
     {
         name: 'SILVERMARK',
-        //image: silvermark,
+        image: silvermark,
         description: 'SILVERMARK is a minimalist bookmark manager application that allows users to create, view, and delete bookmarks. SILVERMARK utilizes a Ruby on Rails backend and a JavaScript frontend. SILVERMARK utilizes a React framework and Redux middleware.',
         github: 'https://github.com/am20dipi/silvermark'
     },
@@ -15,13 +17,13 @@ const projects = [
     },
     {
         name: 'dillonperino.com',
-        //image: null,
+        image: congruent,
         description: "dillonperino.com is an art-portfolio website built using ReactJS, HTML, CSS and Bootstrap. Dillonperino.com is a living and changing collection of art that reflects the artist's accomplishments, skills and experiences.",
         github: 'https://github.com/am20dipi/dillonperino'
     },
     {
         name: 'ADR-UI',
-        //image: tooltip2,
+        image: adrui,
         description: 'ADR-UI is a UI library that exemplifies simple, reusable code to be utilized in future applications. ADR-UI utilizes JavaScript, HTML, CSS, Webpack and Node Package Manager.',
         github: 'https://github.com/am20dipi/adr-ui'
     }
@@ -30,14 +32,16 @@ const projects = [
 function Projects() {
     return (
         <div className="p">
-            <h4 style={{fontFamily: 'Nighty', fontSize: '30px'}}>FRONTEND FOCUSED SOFTWARE ENGINEER</h4>
-            <p style={{fontSize: '30px'}}>WITH FULL STACK EXPERIENCE</p>
+            <h4 style={{fontSize: '50px', fontFamily: 'Nighty', fontWeight: '200', color: 'white', webkitTextStroke: 'black 1.2px'}}>FRONTEND FOCUSED SOFTWARE ENGINEER</h4>
+            <p style={{fontSize: '28px'}}>WITH FULL STACK EXPERIENCE</p>
+            <br/>
+            <p style={{fontWeight: '100'}}>Some technical projects from my bootcamp experience + a freelance project.  <span style={{fontWeight: '600'}}>Click to learn more.</span></p> 
             <br/>
             <div className="card-columns">
                 {projects.map((project, index) => {
                     return (
                     <div className="card" id="project" key={index} onClick={() => window.open(project.github)}>
-                        <img className="card-img-top" src={project.image} alt={project.name}/>
+                       {/*  <img className="card-img" src={project.image} alt={project.name} style={{width: '40%'}} /> */}
                         <div className="card-body">
                             <h5 className="card-title">{project.name}</h5>
                             <p className="card-text text-muted">{project.description}</p>

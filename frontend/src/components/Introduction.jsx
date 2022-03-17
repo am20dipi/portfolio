@@ -55,7 +55,7 @@ function Introduction(){
                         </div>
                         {/*  email */}
                         <div className="c-info-item" id="introduction">
-                            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=adrianadipietro4@gmail.com&su=Hi+Adriana" className="c-icon" id="introduction" target="_blank" rel="noopener noreferrer"><i className="fa fa-google"></i></a>
+                            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=adrianadipietro4@gmail.com&su=Hi+Adriana" className="c-icon" id="introduction" target="_blank" rel="noopener noreferrer"><i class="fa-regular fa-envelope"></i></a>
                             {/* adrianadipietro4@gmail.com */}
                         </div>
                         {/* github */}
