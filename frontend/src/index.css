@@ -127,8 +127,26 @@ code {
   .i{
     flex-direction: column;
   }
+  .i-right{
+    justify-content: center;
+    margin-right: 0;
+    
+  }
+  .p-text{
+    padding-top: 45px !important;
+    color: white;
+    position: relative;
+  }
+  .p-wrapper{
+    height: 70vh !important;
+  }
+  .p{
+    height: 70vh !important;
+  }
+  
   .c-wrapper{
     flex-direction: column;
+    padding: 50px !important;
   }
   .p-list {
     display: none;
@@ -163,11 +181,6 @@ code {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-  }
-  .p-text{
-    color: white;
-    padding-top: 10px;
-    position: relative;
   }
   .p-desc{
     display: none;
