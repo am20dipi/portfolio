@@ -30,7 +30,7 @@ function Introduction(){
             <div className="i-left">
                 <div className="i-left-wrapper">
                     {/* <h3 style={{ fontSize: '30px'}}>Hello, my name is</h3> */}
-                    <h2 className="i-name">.ADRIANA. DIPIETRO.</h2>
+                    <h2 className="i-name">.ADRIANA. .DIPIETRO.</h2>
                     <div className="i-title">
                         <div className="i-title-wrapper">
                             <div className="i-title-item">Web Developer</div>
@@ -39,13 +39,13 @@ function Introduction(){
                         </div>
                     </div>
                     <br/>
-                    <ul className="i-skillset" style={{paddingTop:'60px'}} >
+                    <div className="i-skillset" style={{paddingTop:'60px'}} >
                         {skillset.map((skill, index) => {
                             return (
-                                <li key={index}>{skill.name}</li>
+                                <p key={index}>{skill.name}</p>
                             )
                         })}
-                    </ul>
+                    </div>
                     <br/>
                     <div className="c-info" >
                         {/* linkedin */}

@@ -45,14 +45,14 @@ function Contact(){
                 <div className="c-wrapper">
                     <div className="c-left">
                         <h1 className="c-title">.CONTACT. ME.</h1>
-                        <div className="c-info">
-                            <div className="c-info-item">
+                        <div className="c-info" id="contact">
+                            <div className="c-info-item" id="contact">
                                 <a href="https://www.linkedin.com/in/adriana-dipietro/" className="c-icon" target="_blank" rel="noopener noreferrer"><i className="fa fa-linkedin"></i></a>
                             </div>
-                            <div className="c-info-item">
+                            <div className="c-info-item" id="contact">
                                 <a href="https://mail.google.com/mail/?view=cm&fs=1&to=adrianadipietro4@gmail.com&su=Hi+Adriana" className="c-icon" target="_blank" rel="noopener noreferrer"><i class="fa-regular fa-envelope"></i></a>
                             </div>
-                            <div className="c-info-item">
+                            <div className="c-info-item" id="contact">
                                 <a href="https://github.com/am20dipi" target="_blank" className="c-icon" rel="noopener noreferrer"><i className="fa fa-github"></i></a>
                             </div>
                         </div>

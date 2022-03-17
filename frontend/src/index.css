@@ -43,6 +43,7 @@ code {
   justify-content: left;
   display: flex;
   align-items: center;
+  margin-right: 225px;
 }
 
 .i-left-wrapper {
@@ -54,13 +55,30 @@ code {
   align-items: center;
 }
 
+.i-right-wrapper{
+  padding: 40px 60px;
+  height: 70%;
+  background-color: rgb(235, 241, 220);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
 .i-name{
   font-size: 50px;
 }
 
-ul li {
-  list-style-type: " +  ";
-  font-size: large;
+.i-skillset {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: medium;
+}
+
+.i-skillset p {
+  padding: 1px;
+  margin: 1px;
 }
 
 .i-title{
@@ -99,13 +117,11 @@ ul li {
   object-fit: cover;
   position: relative;
 }
-.i-right-wrapper{
-  padding: 10px 10px;
-  height: 70%;
-  background-color: rgb(235, 241, 220);
-  display: flex;
-  flex-direction: column;
-}
+
+
+
+/* mobile */
+
 
 @media screen and (max-width: 480px){
   .i{
@@ -113,6 +129,9 @@ ul li {
   }
   .c-wrapper{
     flex-direction: column;
+  }
+  .p-list {
+    display: none;
   }
   .i-left-wrapper{
     padding: 30px;
@@ -135,13 +154,35 @@ ul li {
     align-items: center;
     justify-content: center;
   }
-
-  .p .p-list{
-    position: fixed;
+  .c-info#contact {
+    align-items: center;
+    justify-content: center;
+    padding-left: 55px;
   }
+  .p{
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .p-text{
+    color: white;
+    padding-top: 10px;
+    position: relative;
+  }
+  .p-desc{
+    display: none;
+  }
+  .card-columns#project {
+    display: none;
+  }
+  .card#blog{
+    margin: 12px;
+  }
+  .b-text{
+    margin: 15px;
+  }
+  
 
-  
-  
 }
 
 
@@ -149,19 +190,18 @@ ul li {
 /* contact */
 
 .c{
-  height: 60vh;
-  position: relative;
+  display: flex;
 }
 
 .c-bg{
   width: 100%;
-  height: 100%;
+  height: 60vh;
   background-color: rgb(235, 241, 222);
   position: absolute;
 }
 
 .c-wrapper{
-  padding: 55px;
+  padding: 100px;
   display: flex;
 }
 
@@ -176,7 +216,6 @@ ul li {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-
 }
 
 .c-title {
@@ -185,7 +224,7 @@ ul li {
 }
 
 
-.c-info-item{
+.c-info-item#contact{
   display: inline-block;
   width: 35px;
   height: 35px;
@@ -217,7 +256,6 @@ ul li {
   width: 60px;
   padding: 2px;
 }
-
 
 .c-description{
   font-weight: 200;
@@ -285,20 +323,23 @@ button.submit{
 /* projects */
 
 .p{
-  padding: 50px 30px;
+  display: flex;
+  background-color: white;
+  height: 110vh;
+  margin-bottom: 50px;
+}
+
+.p-wrapper {
+  padding: 40px 20px;
+  height: 100%;
+  background-color: rgb(235, 241, 220);
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
-  height: 110vh;
-  position: relative;
-  margin: 20px;
+  
 }
 
-.p-list{
-  display: flex;
-  width: 100%
-}
+
 
 .project{
   display: flex;
@@ -306,7 +347,7 @@ button.submit{
   margin: 4px;
   justify-content: center;
   padding: 20px 20px;
-  border: 2px solid rgb(245, 244, 244);
+  border: 2px solid rgb(245, 245, 244);
   border-radius: 8px 8px 0px 0px;
   overflow: hidden;
 }
@@ -317,7 +358,7 @@ button.submit{
 
 
 .card#project:hover{
-  box-shadow: 10px 10px 15px 1px rgb(226, 224, 224);
+  box-shadow: 10px 10px 15px 1px rgb(179, 184, 170);
   cursor: pointer;
 }
 
@@ -327,9 +368,13 @@ button.submit{
 
 
 
-.blog {
+.b {
   display: flex;
   margin: 50px 50px;
+}
+
+.b-text{
+  text-align: center;
 }
 
 .card#blog:hover{
