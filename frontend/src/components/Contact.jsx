@@ -44,19 +44,14 @@ function Contact(){
             <div className="c-bg">
                 <div className="c-wrapper">
                     <div className="c-left">
-                        <h1 className="c-title">Contact me</h1>
+                        <h1 className="c-title" style={{fontSize: '60px'}}>.CONTACT. ME.</h1>
                         <div className="c-info">
-                            {/* linkedin */}
                             <div className="c-info-item">
                                 <a href="https://www.linkedin.com/in/adriana-dipietro/" className="c-icon" target="_blank" rel="noopener noreferrer"><i className="fa fa-linkedin"></i></a>
-                               {/*  /adriana-dipietro */}
                             </div>
-                           {/*  email */}
                             <div className="c-info-item">
                                 <a href="https://mail.google.com/mail/?view=cm&fs=1&to=adrianadipietro4@gmail.com&su=Hi+Adriana" className="c-icon" target="_blank" rel="noopener noreferrer"><i className="fa fa-google"></i></a>
-                                {/* adrianadipietro4@gmail.com */}
                             </div>
-                            {/* github */}
                             <div className="c-info-item">
                                 <a href="https://github.com/am20dipi" target="_blank" className="c-icon" rel="noopener noreferrer"><i className="fa fa-github"></i></a>
                             </div>

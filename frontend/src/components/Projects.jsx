@@ -30,7 +30,8 @@ const projects = [
 function Projects() {
     return (
         <div className="p">
-            <h4>Frontend Focused Software Engineer with Fullstack Experience</h4>
+            <h4 style={{fontFamily: 'Nighty', fontSize: '30px'}}>FRONTEND FOCUSED SOFTWARE ENGINEER</h4>
+            <p style={{fontSize: '30px'}}>WITH FULL STACK EXPERIENCE</p>
             <br/>
             <div className="card-columns">
                 {projects.map((project, index) => {

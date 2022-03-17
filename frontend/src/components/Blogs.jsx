@@ -30,6 +30,7 @@ function Blog(){
                                 <h5 className="card-title" style={{textAlign: 'center'}}>{blog.title}</h5>
                                 
                                 <br/>
+                                <p className="text-muted"><i class="fa-regular fa-heart"></i> {blog.positive_reactions_count}</p>
                                 <p className="text-muted"><small>{blog.tags}</small></p>
             
                             </div>
