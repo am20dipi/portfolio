@@ -19,7 +19,7 @@ function Blog(){
 
 
     return (
-        <div className="blog">
+        <div className="b">
             <p><span style={{fontWeight: '300'}}>Here are some of my most recent blog posts.</span> Click the title to read the full articles.</p> 
             <div className="card-columns" >
                 {blogs.slice(0,6).map((blog, index) => {

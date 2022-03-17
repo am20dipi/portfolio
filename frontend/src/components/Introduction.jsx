@@ -30,7 +30,7 @@ function Introduction(){
             <div className="i-left">
                 <div className="i-left-wrapper">
                     {/* <h3 style={{ fontSize: '30px'}}>Hello, my name is</h3> */}
-                    <h2 className="i-name">.ADRIANA.DIPIETRO.</h2>
+                    <h2 className="i-name">.ADRIANA. DIPIETRO.</h2>
                     <div className="i-title">
                         <div className="i-title-wrapper">
                             <div className="i-title-item">Web Developer</div>

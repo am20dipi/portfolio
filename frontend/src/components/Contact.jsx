@@ -44,7 +44,7 @@ function Contact(){
             <div className="c-bg">
                 <div className="c-wrapper">
                     <div className="c-left">
-                        <h1 className="c-title" style={{fontSize: '60px'}}>.CONTACT. ME.</h1>
+                        <h1 className="c-title">.CONTACT. ME.</h1>
                         <div className="c-info">
                             <div className="c-info-item">
                                 <a href="https://www.linkedin.com/in/adriana-dipietro/" className="c-icon" target="_blank" rel="noopener noreferrer"><i className="fa fa-linkedin"></i></a>
